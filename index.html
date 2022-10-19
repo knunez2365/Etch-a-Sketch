@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h1 class="title">Etch A Sketch</h1>
+      <div class="slide-container">
+        <div class="sketch-menu">
+          <div class="slider">
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+            <input
+              id="numberRange"
+              type="range"
+              min="0"
+              max="64"
+              value="0"
+              oninput="rangeValue.innerText = this.value"
+            />
+            <p id="rangeValue">0</p>
+            <button class="rainbow">rainbow</button>
+            <button class="clear">clear</button>
+          </div>
+        </div>
+        <div class="container">
+          <div class="boxes"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
