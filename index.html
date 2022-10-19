@@ -15,6 +15,7 @@
           <div class="slider">
             <label for="favcolor">Select your favorite color:</label>
             <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+            <p id="rangeValue">0</p>
             <input
               id="numberRange"
               type="range"
@@ -23,9 +24,9 @@
               value="0"
               oninput="rangeValue.innerText = this.value"
             />
-            <p id="rangeValue">0</p>
-            <button class="rainbow">rainbow</button>
-            <button class="clear">clear</button>
+            <button class="color">Color</button>
+            <button class="rainbow">Rainbow</button>
+            <button class="clear">Clear</button>
           </div>
         </div>
         <div class="container">

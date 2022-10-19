@@ -1,5 +1,16 @@
-* {
+/* * {
   outline: solid;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(240, 238, 238);
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 80px;
 }
 
 .box {
@@ -17,15 +28,15 @@
 }
 
 .slider {
-  align-self: center;
   width: 200px;
   background: #fcfcfc;
-  border-radius: 20px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 15px 40px #7e6d5766;
+  box-shadow: 0px 2px 2px #7e6d5766;
+  gap: 16px;
 }
 
 .container {
@@ -34,6 +45,9 @@
   display: grid;
   grid-template-columns: repeat(64, 1fr);
   grid-auto-rows: auto;
+  box-shadow: 0px 1px 5px;
+  background-color: white;
+  border-radius: 2px;
 }
 
 .boxes {
@@ -41,6 +55,22 @@
   height: auto;
 }
 
-.boxes:hover {
-  background-color: chocolate;
+#favcolor {
+  cursor: pointer;
+  width: 40%;
+  height: 5%;
+}
+
+#numberRange {
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  width: 60%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(239, 227, 227, 0.487);
 }
